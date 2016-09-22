@@ -31,10 +31,25 @@ console.log(isCharacterAVowel('f'));
 //Function to find the sum of numbers in an array
 function sumArray(array) {
   var sum = 0;
-  for (i = 0; i < array.length; i++) {
+  for (var i = 0; i < array.length; i++) {
     sum = sum + array[i];
   }
   return sum;
 }
 var numbers =[1, 2, 3, 4];
 console.log(sumArray(numbers));
+
+
+//Function to find the multiples of numbers in an array
+function multiplyArray(array) {
+  var answer = 1;
+  for (var i = 0; i < array.length; i++) {
+    answer = answer * array[i];
+  }
+  return answer;
+}
+console.log(multiplyArray(numbers));
+
+
+
+
