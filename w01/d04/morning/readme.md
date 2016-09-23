@@ -2,6 +2,7 @@
 
 ![Best Star Wars Blooper Ever](https://media.giphy.com/media/ay2rVmZgxsoSs/giphy.gif)
 
+
 Working in the command line is a key skill to develop as a programmer. It's a big break from what you're used to, and practice makes (eventually) perfect. Let's explore the Star Wars narrative using the command line!
 
 After every Act, make sure you `git add .` and `git commit -m "[YOUR MESSAGE HERE]"`!
