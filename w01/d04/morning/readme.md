@@ -18,7 +18,7 @@ After every step, write down the commands in the appropriate section of ` starwa
 ## "A New Hope"
 ### Act I
 
-* In your unit 1, day 2 morning-exercise folder, create a directory called `star_wars`.
+* In wdi-nyc-60-students, w01/d04/morning folder, create a directory called `star_wars`.
 
 > Example answer: `mkdir star_wars`
 
