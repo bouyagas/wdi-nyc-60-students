@@ -26,9 +26,9 @@ krystyna.printData = function printItAll(person) {
   var hobs = null;
   for (var i = 0; i < this.hobbies.length; i++) {
     var data = this.hobbies[i];
-    var hobs = hobs + ", " + data;
+    hobs += ", " + data;
   }
-  return "Hi, I'm " + krystyna.fullName() + " and my hobbies include " + hobs
+  return "Hi, I'm " + this.fullName() + " and my hobbies include " + hobs
 }
 
 // 7. Bonus!
