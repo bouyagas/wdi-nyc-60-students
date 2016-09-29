@@ -42,7 +42,7 @@ krystyna.updateData = function newData(person) {
      newKey = this.firstName;
    } else if (key === 'lastName') {
      newKey = this.lastName;
-   } else if (locator === 'age') {
+   } else if (key === 'age') {
      newKey = this.age;
    } else {
      newKey = this.hobbies;
