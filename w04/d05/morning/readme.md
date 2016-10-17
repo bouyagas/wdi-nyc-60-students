@@ -57,7 +57,7 @@ The sum of the squares of the first ten natural numbers is,
 ```
 The square of the sum of the first ten natural numbers is,
 ```
-(1 + 2 + ... + 10)2 = 552 = 3025
+(1 + 2 + ... + 10)^2 = 3025
 ```
 Hence the difference between the square of the sums of the first ten natural numbers and the sum of the squares is
 ```
