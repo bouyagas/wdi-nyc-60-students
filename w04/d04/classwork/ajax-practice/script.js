@@ -24,7 +24,7 @@ $(document).ready(() => {
     method: 'GET',
     type: 'json',
     success: (data) => {
-      let $nameList = $('<ul>')
+      const $nameList = $('<ul>')
       for (let i = 0; i < data.results.length; i++) {
         let $name = $('<li>');
         let first = data.results[i].name.first;
