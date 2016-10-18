@@ -26,14 +26,16 @@ const compliments = [
   'If Einstein could meet you, he\'d be "mildly to moderately" intimidated.'
 ];
 
-
 app.get('/', (req, res) => {
   const link1 = '/';
   const link2 = 'http://expressjs.com/';
   res.render('index', {
-  compliment: compliments[Math.floor(Math.random()*10)],
+  compliment: compliments[Math.floor(Math.random()*9)],
   link1: link1,
   link2: link2,
+  bg1: Math.floor(Math.random()*256),
+  bg2: Math.floor(Math.random()*256),
+  bg3: Math.floor(Math.random()*256),
   });
 });
 
@@ -41,10 +43,15 @@ app.get('/:name', (req, res) => {
   const name = req.params.name;
   const link1 = '/';
   const link2 = 'http://expressjs.com/';
-  res.render('index', {
+  let color = Math.floor(Math.random()*256);
+  res.render('name', {
   name: name,
-  compliment: compliments[Math.floor(Math.random()*10)],
+  compliment: compliments[Math.floor(Math.random()*9)],
   link1: link1,
   link2: link2,
+  bg1: Math.floor(Math.random()*256),
+  bg2: Math.floor(Math.random()*256),
+  bg3: Math.floor(Math.random()*256),
   });
-});
+})
+

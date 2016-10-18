@@ -5,13 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Express Compliment Generator</title>
   <link rel="stylesheet" href="">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(<%= bg1 %>, <%= bg2 %>, <%= bg3 %>);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+
+
 </head>
 <body>
-  <% if (name !== undefined) { %>
-    <h1>Greetings <%= name %>, <%= compliment %></h1>
-  <% } else { %>
-    <h1><%= compliment %></h1>
-  <% } %>
+  <h1><%= compliment %></h1>
   <a href="<%= link1 %>">I'm still emotionally vacant. Give me another compliment.</a><br>
   <a href="<%= link2 %>">I'm ready to soldier on.</a>
 </body>
