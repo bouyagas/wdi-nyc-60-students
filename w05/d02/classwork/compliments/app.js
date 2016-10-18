@@ -37,3 +37,14 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/:name', (req, res) => {
+  const name = req.params.name;
+  const link1 = '/';
+  const link2 = 'http://expressjs.com/';
+  res.render('index', {
+  name: name,
+  compliment: compliments[Math.floor(Math.random()*10)],
+  link1: link1,
+  link2: link2,
+  });
+});
