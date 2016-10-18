@@ -33,3 +33,21 @@ var frameworks = {
 frameworks.frontEnd.forEach(function(object) {
   console.log(object.name + ' is a ' + object.description);
 });
+
+const arr = [3, 5, 2, 8, 1];
+
+let sum = 0;
+arr.forEach(function(n) {
+  sum += n;
+});
+console.log(sum);
+
+
+const modifiedFrontEnd = frameworks.frontEnd.map(function(object) {
+  return {
+    'name': object.name + '.js',
+    'description': object.description,
+  }
+});
+
+console.log(modifiedFrontEnd);
