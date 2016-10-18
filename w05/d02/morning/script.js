@@ -51,3 +51,37 @@ const modifiedFrontEnd = frameworks.frontEnd.map(function(object) {
 });
 
 console.log(modifiedFrontEnd);
+
+const modifiedBackEnd = frameworks.backEnd.map(function(object) {
+  return {
+    'name': object.name + '.js',
+    'description': object.description,
+  }
+});
+
+console.log(modifiedBackEnd);
+
+
+const frontEndFilter = frameworks.frontEnd.filter(function(object) {
+  if (object.description.length > 30) {
+    return object;
+  }
+});
+
+console.log(frontEndFilter);
+
+const backEndFilter = frameworks.backEnd.filter(function(object) {
+  if (object.name.charAt(0).toUpperCase() === 'A' || object.name.charAt(0).toUpperCase() === 'E' || object.name.charAt(0).toUpperCase() === 'I' || object.name.charAt(0).toUpperCase() === 'O' || object.name.charAt(0).toUpperCase() === 'U') {
+    return object;
+  }
+});
+
+console.log(backEndFilter);
+
+
+var frontEndNames = frameworks.frontEnd.reduce(function(str, object) {
+  return str += object.name;
+} '')
+
+console.log(frontEndNames);
+
