@@ -18,12 +18,17 @@ Express is a Web Application Framework. It leverages Node in order to make our l
 ##### Part2: Answer the following Questions:
 
 1. what is a module in Node?
+A module encapsulates related code into a single unit of code. When creating a module, this can be interpreted as moving all related functions into a file
 
 2. What version of node are you running?
+v6.6.0
 
 3. What is the node console and how can you use it to calculate the square root of 81?
+The node console runs in terminal and it renders JS 
+Math.sqrt(81)
 
 4. Are JSON and JavaScript Objects the same thing? Explain.
+JSON is a data interchange format. It's a way to pass structured information between languages. A JavaScript object on the other hand is a physical type. 
 
 # Deliverables
 > Part 1: Slack me a screenshot of your browser when you navigate to `http://localhost:3000`
