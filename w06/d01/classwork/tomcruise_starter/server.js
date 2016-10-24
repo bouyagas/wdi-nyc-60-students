@@ -25,7 +25,7 @@ app.set('view engine', 'ejs');
 // middleware to receive form inputs
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// middleware for method override
+// middleware for method override (allows deletes and puts to work)
 app.use(methodOverride('_method'));
 
 app.listen(PORT, () => console.warn('server up and running on port ', PORT));
@@ -49,10 +49,18 @@ const filterQS = (req, res, next) => {
 };
 
 /* ------------------------ */
-
-app.get('/', filterQS, dbService.searchMovies, (req, res) => {
+// Root route - filter movies, search for movies in our DB
+app.get('/', dbService.getFavorite, filterQS, dbService.searchMovies, (req, res) => {
   res.render('index', {
     favorites: res.favorites || [],
     movies: res.filteredMovies,
   });
+});
+
+app.post('/favorites', dbService.saveFavoriteMovie, (req, res) => {
+  res.redirect('/');
+});
+
+app.delete('/favorites/:id', dbService.deleteFavoriteMovie, (req, res) => {
+  res.redirect('/');
 });

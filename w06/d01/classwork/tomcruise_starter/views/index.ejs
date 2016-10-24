@@ -14,12 +14,32 @@
         <h3> <%# movies.length %>  Results</h3>
         <ul class="results">
           <%# results will be displayed here %>
+          <% for (let i = 0; i < movies.length; i++) { %>
+            <li class="movie-item">
+              <img class="poster" src="<%= movies[i].Poster %>" alt="">
+              <h4><%= movies[i].Title %></h4>
+              <form class="save-favorite" action="/favorites" method="post">
+                <input type="hidden" name="favorite[Title]" value="<%= movies[i].Title %>">
+                <input type="hidden" name="favorite[Poster]" value="<%= movies[i].Poster %>">
+                <input type="submit" value="Save to favorites">
+              </form>
+            </li>
+          <% }; %>
         </ul>
       </div>
       <div class="container">
         <h3><%# favorites.length %> Favorites</h3>
         <ul class="favorites">
           <%# Saved movies will be displayed here%>
+          <% for (let i = 0; i < favorites.length; i++) { %>
+            <li class="movie-item">
+              <img class="poster" src="<%= favorites[i].Poster %>" alt="">
+              <h4> <%= favorites[i].Title %></h4>
+              <form action="/favorites/<%= favorites[i]._id %>?_method=DELETE" method="post">
+                <input type="submit" value="Delete">
+              </form>
+            </li>
+          <% }; %>
         </ul>
       </div>
     </div>
