@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 // ejs - embedded js, template for a severside
 app.set('view engine', 'ejs');
 // grab 'views' and save them in location 'views'
-app.set('views', 'views');
+app.set('views', './views');
 
 
 // Middleware lives between the request and response cycle
@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
   });
 });
 
-// Req and res are arbitraty variable names
+// Req and res are arbitraty variabl/e names
 // app.get - the client is going to make a get request at the path of /about
 // when this gets to our server, response sends back 'About'
 app.get('/about', (req, res) => {
@@ -51,10 +51,5 @@ app.get('/contact', (req, res) => {
   });
 })
 
-fn(){
-  for(const i = 0; i < 100; i++){
-    console.log(i);
-  }
-}
 
 
