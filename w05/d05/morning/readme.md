@@ -10,7 +10,7 @@ After this exercise, you should have some confidence that you were able to desig
 
 A starter `index.html` and `style.css` set of linked files have been provided. Do your work in the CSS, but feel free to edit the HTML as necessary.
 
-Work with a partner! If you read this line of code, send Trevor or Irwin a direct message on slack that "I read this readme!".
+Work with a partner! If you read this line of code, quietly send Trevor (if you're in 3a) or Irwin (if you're in 2a) a direct message on slack that "I read this readme!".
 
 ## Assignment
 
