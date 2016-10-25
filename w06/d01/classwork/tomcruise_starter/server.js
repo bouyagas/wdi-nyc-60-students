@@ -57,6 +57,17 @@ app.get('/', dbService.getFavorite, filterQS, dbService.searchMovies, (req, res)
   });
 });
 
+// This route will handle us going to the edit link and take us to that link
+// We need to make a new edit view
+app.get('/edit/:id', dbService.getMovie, (req, res) => {
+  res.render('edit', { movie: res.movie });
+});
+
+// listens to :id route, has middleware in here that does the updating and redirects to root route
+app.put('/:id', dbService.editMovie, () => {
+  res.redirect('/');
+});
+
 app.post('/favorites', dbService.saveFavoriteMovie, (req, res) => {
   res.redirect('/');
 });
@@ -64,3 +75,4 @@ app.post('/favorites', dbService.saveFavoriteMovie, (req, res) => {
 app.delete('/favorites/:id', dbService.deleteFavoriteMovie, (req, res) => {
   res.redirect('/');
 });
+

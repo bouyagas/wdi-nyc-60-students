@@ -87,4 +87,6 @@ module.exports = {
   saveFavoriteMovie,
   getFavorite,
   deleteFavoriteMovie,
+  editMovie,
+  getMovie
 };
