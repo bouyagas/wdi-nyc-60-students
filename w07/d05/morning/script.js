@@ -20,3 +20,13 @@ function clock (hour, minute) {
     return [firstAnswer, secondAnswer];
   }
 }
+
+// Absolute value helps to avoid the if statement
+function clocky(hours, minutes) {
+  if (hours > 12 || hours < 1 || minutes > 59 || minutes < 0) {
+    return 'out of range'
+  }
+  var degree1 = Math.abs(5.5*minutes - 30*hours);
+  var degree2 = 360 - degree1;
+  return [degree1, degree2]
+}
