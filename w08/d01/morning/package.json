@@ -1,0 +1,17 @@
+{
+  "name": "morning",
+  "version": "1.0.0",
+  "description": "![](https://media.giphy.com/media/dfpn0fJphU5ZS/giphy.gif)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Krystyna Malewski",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}

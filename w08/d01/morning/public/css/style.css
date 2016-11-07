@@ -29,7 +29,7 @@ img {
   position: relative;
   height: 100%;
   width: 400px;
-  background-image: url("../images/operation.png");
+  background-image: url("../imgs/operation.png");
   background-repeat: no-repeat;
 }
 
@@ -40,4 +40,32 @@ p {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Write Your Styles below!!!   */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*
+
+
+.wishbone {
+  position: absolute;
+  margin-top: 13%;
+  margin-left: 43%;
+}
+
+.breadbasket {
+  position: absolute;
+  margin-top: 75%;
+  margin-left: 48%;
+  -webkit-transform: rotate(-14deg); /* Chrome, Safari, Opera */
+  transform: rotate(-14deg);
+}
+
+.heart {
+  position: absolute;
+  margin-top: 19%;
+  margin-left: 59.5%;
+  -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+  transform: rotate(-5deg);
+}
+
+.butterflies {
+  position: absolute;
+  margin-top: 48%;
+  margin-left:54%;
+}
