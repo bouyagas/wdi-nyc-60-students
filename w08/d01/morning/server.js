@@ -1,4 +1,6 @@
 //SET UP EXPRESS SERVER IN HERE!
+'use strict';
+
 const express = require('express');
 const logger = require('morgan');
 
