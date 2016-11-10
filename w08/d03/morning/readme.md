@@ -57,4 +57,8 @@ Use SQL queries to complete the following tasks
 
 9. Set the rating of all unrated movies to "G".
 
+<<<<<<< HEAD
 10. Remove movie theaters projecting movies rated "NC-17".
+=======
+10. Remove movie theaters projecting movies rated "NC-17".
+>>>>>>> cf4f5b62222b6989c7e142f8247f0da63e46aeb4
