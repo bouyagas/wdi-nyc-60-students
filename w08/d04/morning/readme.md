@@ -1,5 +1,3 @@
-
-![](https://network.napco.com/target-marketing/wp-content/uploads/sites/3/2016/02/job_inteview_funny.jpg)
 # 10 Javascript Interview Questions You Should Know!
 
 
