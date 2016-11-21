@@ -141,6 +141,21 @@ console.log(hagrid)
 //   teaches: "Care of Magical Creatures",
 //   quote: "What's comin' will come and we'll meet it when it does."
 // }
+<<<<<<< HEAD
 console.log(snape)
 
 // answer
+=======
+//
+// logMore(hagrid, say, ["Yo I'm "])
+// logMore(snape, say, ["I am ...................................................................."])
+//
+// logMore(hagrid, update, ["Keeper of Keys and Grounds", "Care of Magical Creatures", "What's comin' will come and we'll meet it when it does."])
+//
+// logMore(snape, update , ["Professor at Hogwarts", "Defence Against the Dark Arts", "Turn to page 394."])
+//
+// console.log(hagrid)
+// console.log(snape)
+//
+// // answer
+>>>>>>> 570dc2e7295a8c5a8f2dba7777d6e1cd5387882b
