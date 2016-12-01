@@ -7,11 +7,11 @@
 #
 # # 2
 # the_word = "Bird"
-#
+
 # 3.times do
 #   print the_word
 # end
-#
+
 # print "#{the_word} is the word"
 #
 #
@@ -26,25 +26,25 @@
 # # 4
 # CHANGE = "I am a constant!"
 # puts CHANGE
-#
+
 # CHANGE = "If you try to change me, I'll throw a warning!"
 # puts CHANGE
-#
+
 #
 #
 #
 # # 5
 # one = 2 - 1
 # apple = "apple"
-#
+
 # if one > 0
 #   puts "numbers are truthy in both ruby and js"
 # end
-#
+
 # if apple
 #   puts "strings are truthy values in ruby, just like in js"
 # end
-#
+
 # if 1 == "1"
 #   puts "this won't print"
 # elsif 1 == one
@@ -86,17 +86,17 @@
 #   def bark
 #     puts "BARK!"
 #   end
-#
+
 #   def bark_phrase(words)
 #     puts words
 #   end
-#
+
 #   def no_parenthesis words
 #     puts words
 #   end
-#
+
 # end
-#
+
 # alfred = DOG.new
 # alfred.bark
 # alfred.bark_phrase("In ruby, dogs can talk")
@@ -106,17 +106,17 @@
 #
 #
 # # 10
-# list_of_numbers = (1..10).to_a
-#
-# puts "Tacocat".reverse
-#
-# puts "the list of numbers is: #{list_of_numbers.join ', '}"
-#
-# puts list_of_numbers.reject! { |num| nun % 2 == 0 }
-# puts list_of_numbers
-#
-# hashling = { "a" => 100, "b" => 200 }
-# puts hashling.each {|key, value| puts "#{key} is #{value}" }
-#
-# h = { "a" => 100, "b" => 200 }
-# h.fetch("z", "not found")
+list_of_numbers = (1..10).to_a
+
+puts "Tacocat".reverse
+
+puts "the list of numbers is: #{list_of_numbers.join ', '}"
+
+puts list_of_numbers.reject! { |num| num % 2 == 0 }
+puts list_of_numbers
+
+hashling = { "a" => 100, "b" => 200 }
+puts hashling.each {|key, value| puts "#{key} is #{value}" }
+
+h = { "a" => 100, "b" => 200 }
+h.fetch("z", "not found")
