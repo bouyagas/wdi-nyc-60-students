@@ -26,6 +26,7 @@ sayHarryEscape(); // "Only with the help of friends!"
 // the goldenSnitch object has the logEscape key which cosole.logs(this.escape). By binding the harryPotter object to the logEscape key, the "this" is referring to the harryPotter object, meaning this.escape will reference harryPotter.escape instead of goldenSnitch.escape.
 
 
+<<<<<<< HEAD
 // // 1.2
 var draco = {
   name: "Draco Malfoy",
@@ -45,6 +46,82 @@ var ron = {
   house: "Gryffindor",
   hasHenchmen: false
 }
+=======
+// 1.2
+// var draco = {
+//   name: "Draco Malfoy",
+//   house: "Slytherin",
+//   hasHenchmen: true,
+//   logYelling: function() {
+//     if (this.hasHenchmen === true) {
+//       console.log("Potter! Is it true you fainted? I mean, you actually fainted? ");
+//     } else if (this.hasHenchmen === false) {
+//       console.log("Shove off Malfoy!")
+//     } else {
+//     	console.log('this broke')
+//     }
+//   }
+// }
+
+// var ron = {
+//   name: "Ron Weasley",
+//   house: "Gryffindor",
+//   hasHenchmen: false
+// }
+
+// draco.logYelling();
+// ron.logYelling();
+
+// answer
+
+// 1.7
+// var dumbledore = {
+//   name: "Albus Dumbledore",
+//   prefix: "Professor",
+//   quote: "In dreams we enter a world that's entirely our own."
+// }
+
+// var snape = {
+//   name: "Serveus Snape",
+//   prefix: "Professor",
+//   quote: "Mr Potter.Our.New.Celebrity",
+//   sayQuote: function() {
+//     console.log(this.quote);
+//   }.bind(dumbledore)
+// }
+
+// snape.sayQuote();
+
+// // answer
+//
+//
+// 1.9
+var hagrid = {
+  name: "Rubeus Hagrid",
+  quote: "Your a wizard, Harry!",
+  sayQuote: function() {
+    console.log(this.quote)
+  }
+}
+
+var longbottom = {
+  name: "Neville Longbottom",
+  quote: "Well, there's some debate among herbologists about its effectiveness in fresh water as opposed to salt water... ",
+  sayQuote: function() {
+    console.log(this.quote)
+  }
+}
+
+
+var button = document.getElementById('sorcerersButton');
+
+button.addEventListener(
+  "click",
+  hagrid.sayQuote.bind(hagrid)
+)
+
+// answer
+>>>>>>> 7134a7afb3557a946d032cc00d7cb45c818f571b
 
 draco.logYelling(); // "Potter! Is it true you fainted? I mean, you actually fainted?"
 draco.logYelling.bind(ron)(); // "Shove off Malfoy!""
