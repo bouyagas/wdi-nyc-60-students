@@ -10,34 +10,43 @@ kanye_records = [
 ]
 
 # print the name of every Kanye record
-kanye_records.map{ |rec| puts rec[:title]}
+kanye_records.each{ |rec| puts rec[:title]}
 
 # print the year every Kanye record was released
-kanye_records.map{ |rec| puts rec[:year]}
+kanye_records.each{ |rec| puts rec[:year]}
 
 # look into the future and add a forthcoming Kanye record into our array. It should be released in 2017 and have a title that is completely asinine.
 kanye_records.push({ :year => 2017, :title => "Completely asinine"})
 
 # iterate through Kanye's record collection and print out the titles of all the records released after Kanye's ego exploded (this happened in 2007).
-kanye_records.map{ |rec|
+kanye_records.each do |rec|
   if rec[:year] > 2007
-    puts rec[:title]
+    puts "#{rec[:title]}: #{rec[:year]}"
   end
-}
+end
+
+# another solution
+puts kanye_records.select{ |rec| rec[:year] > 2007}
 
 # iterate through the collection. For each record, print out a sentence detailing each record. For example, " 'Graduation' was released in 2007"
-kanye_records.map{ |rec| puts "'#{rec[:title]}' was released in #{rec[:year]}"}
+kanye_records.each do |rec|
+  puts "'#{rec[:title]}' was released in #{rec[:year]}"}
+end
 
 # iterate through collection. add a key value pair to each record with the key as :label and the value as "def jam".
-kanye_records.map{ |rec| rec[:label] = "def jam"}
+kanye_records.each do |rec|
+  rec[:label] = "def jam"}
+end
 
 # iterate through the collection. if a record's title contains more than 15 letters, print 'that's a long title' to the screen.
-kanye_records.map{ |rec|
+kanye_records.each do |rec|
   if rec[:title].length > 15
     puts "#{rec[:title]}: That's a long title"
   end
-}
+end
 
 # iterate through the collection. replace the letter 'o' in each record title with the number 0.
-kanye_records.map{ |rec| rec[:title].gsub(/o/, '0')}
+kanye_records.each do |rec|
+  rec[:title].gsub(/o/, '0')
+end
 
