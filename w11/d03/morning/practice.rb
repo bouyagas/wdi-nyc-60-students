@@ -2,11 +2,11 @@
 # print "Hello World"
 # variable_declarations = "In ruby, we don't need to use the var keyword to assign variables!"
 # puts variable_declarations
-#
+
 #
 #
 # # 2
-# the_word = "Bird"
+# the_word = "Bird "
 
 # 3.times do
 #   print the_word
@@ -17,8 +17,9 @@
 #
 #
 # # 3
-# h = { "n" => 100, "m" => 100, "y" => 300, "d" => 200, "a" => 0 }
-# h.shift
+h = { "n" => 100, "m" => 100, "y" => 300, "d" => 200, "a" => 0 }
+taco = h.shift
+print taco
 #
 #
 #
@@ -48,9 +49,9 @@
 # if 1 == "1"
 #   puts "this won't print"
 # elsif 1 == one
-#   puts "scrict equalilty is done with 2 equal signs in ruby, rather than 3 in js!"
+#   puts "strict equalilty is done with 2 equal signs in ruby, rather than 3 in js!"
 # end
-#
+
 #
 #
 # # 6
